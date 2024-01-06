@@ -4,12 +4,28 @@ namespace DesafioPOO.Models
     {
         public string Numero { get; set; }
         // TODO: Implementar as propriedades faltantes de acordo com o diagrama
+        protected string Modelo { get; set; } 
 
-        public Smartphone(string numero)
+        protected string Imei { get; set; } 
+
+        protected int Memoria { get; set; } 
+
+
+
+        public Smartphone(string numero, string modelo, string imei, int memoria)
         {
             Numero = numero;
-            // TODO: Passar os parâmetros do construtor para as propriedades
+            // TODO: Passar os parametros do construtor para as propriedade
+            Modelo = modelo;
+
+            Imei = imei;
+
+            Memoria = memoria;
         }
+
+       
+        
+
 
         public void Ligar()
         {
